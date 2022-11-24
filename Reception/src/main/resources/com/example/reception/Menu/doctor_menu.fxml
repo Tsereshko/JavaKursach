@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reception.Controllers.Menu.DoctorMenuController">
+    <children>
+        <HBox fillHeight="false" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="73.0" prefWidth="700.0">
+            <children>
+                <Button fx:id="patientButton" mnemonicParsing="false" prefHeight="74.0" prefWidth="200.0" text="Пациенты">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" prefHeight="74.0" prefWidth="250.0" style="-fx-background-color: #C8C8C8;" text="Врачи" textOverrun="CLIP">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+                <Button fx:id="departmentButton" mnemonicParsing="false" prefHeight="74.0" prefWidth="250.0" text="Отделение">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <AnchorPane layoutY="74.0" prefHeight="325.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <TableView fx:id="tableDoctor" layoutX="30.0" layoutY="63.0" prefHeight="200.0" prefWidth="646.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="39.199981689453125" text="id" />
+                        <TableColumn fx:id="firstnameColumn" prefWidth="72.79998016357422" text="Имя" />
+                        <TableColumn fx:id="lastnameColumn" prefWidth="100.7999267578125" text="Фамилия" />
+                        <TableColumn fx:id="patronymicColumn" prefWidth="89.60003662109375" text="Отчество" />
+                        <TableColumn fx:id="functionColumn" prefWidth="75.20001220703125" text="Должность" />
+                        <TableColumn fx:id="departmentColumn" prefWidth="76.00003051757812" text="Отделение" />
+                        <TableColumn fx:id="cabinetColumn" prefWidth="78.39999389648438" text="Кабинет" />
+                  <TableColumn fx:id="phoneColumn" prefWidth="108.7999267578125" text="Телефон" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
